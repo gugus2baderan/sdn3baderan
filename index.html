@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Sistem Naskah Dinas Elektronik (SINSE)</title>
+  <title>Sistem Naskah Dinas Elektronik (SINDE)</title>
   <link rel="icon" type="image/png" href="Lambang.png" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <style>
@@ -222,7 +222,7 @@
   hasil.style.display = "block"; // ✅ tampilkan container hasil
   hasil.innerHTML = "<p>🔄 Memuat data...</p>";
 
-  fetch("https://docs.google.com/spreadsheets/d/1WIfttQBT7ZV2TwMyBS8L9tliEXFiW7cUkuf_ywh7GPE/gviz/tq?tqx=out:json")
+  fetch("https://docs.google.com/spreadsheets/d/1BrSmLcxNPghSkq1rSkvopETDmtLibPoIMmfz31ja9FM/gviz/tq?tqx=out:json")
     .then(res => res.text())
     .then(text => {
       const json = JSON.parse(text.substring(47).slice(0, -2));
